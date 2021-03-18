@@ -1,0 +1,368 @@
+/*************************
+ Project name : Analysis
+ Doctor : Amr Abo Hani
+ Working team : Mariam Mohamed Ibrahim
+                Rawan Ahmed Mohamed
+                Zainab Mohamed Abd-Elfatah
+                Salsabil Mohamed Taha
+ ***************************/
+/* First Section */
+/* Logo part */
+
+* {
+    box-sizing: border-box;
+}
+body{
+    color: #324b72;
+    width: 90%;
+    box-shadow: 2px 0px 5px #ccc,  -2px 0px 5px #ccc ;
+    position: relative;
+    left:5%;
+    padding-top: 40px;
+}
+
+/*Navbar part*/
+.navbarList{
+    border-bottom: 1px solid #ccc;
+}
+.navbarList li a{
+    font-weight: bold;
+    font-size: 15px;
+    color: #324b72;
+    line-height: 35px;
+    cursor: pointer;
+}
+.navbarList li a:focus{
+    color:#ff4345;
+    border-bottom: 2px solid #ff4345;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.navbarList li a:hover{
+    color:#ff4345;
+    border-bottom: 2px solid #ff4345;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.titleText{
+    padding: 3%;
+    color: rgb(17, 41, 80);
+}
+.form-control{
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+.form-control:focus{
+    border-color: #ff4345 !important;
+    box-shadow: none;
+}
+.detailsSection{
+    background-color: #f0f0f0;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #fff;
+}
+
+
+/*footer section*/
+footer{
+    background-color:#f0f0f0 ;
+    color: rgb(17, 41, 80);
+    text-align: center;
+    padding: 40px;
+}
+footer div .fa{
+    padding: 15px;
+    font-size: 24px;
+    color: rgb(17, 41, 80);
+}
+footer .fa:hover{
+    color: #ff4345;
+}
+footer .fa:focus{
+    color: #ff4345;
+}
+.name{
+    text-align: center;
+}
+.name div{
+    padding:20px;
+    font-size: 22px;
+    font-weight: 400;
+    
+
+}
+.name input{
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #ccc ;
+    border-right: none;
+    padding: 10px;
+    
+    
+}
+.name input:focus{
+    outline-color: #ff4345;
+}
+.link{
+    color:rgb(17, 41, 80);
+    float: right;
+}
+.link:hover{
+    text-decoration: none;
+    color:#ff4345;
+}
+.myBtn{
+    text-align: center;
+
+}
+.submitbtn{
+    padding: 10px;
+    padding-left: 65px;
+    padding-right: 65px;
+    margin-top: 25px;
+    color: #ff4345;
+    font-size: 20px;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 2px 2px #ccc;
+}
+.submitbtn:hover{
+    box-shadow: 2px 2px #ccc inset;
+}
+.submitbtn:focus{
+    box-shadow: -2px -2px #ccc inset,2px 2px #ccc inset;
+    outline:none;
+}
+/* addition of measuring unit*/
+.mu{
+    
+    padding: 10.8px;
+    padding-bottom: 11.7px;
+    background-color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    
+    border: 1px solid #ccc ;
+    border-left: none;
+}
+label{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+
+@media (min-width: 992px)
+{
+    .logoPart{
+    display: flex;
+    flex-wrap: wrap;
+    height: 95px;
+    border-bottom: 1px solid #ccc;
+    justify-content: center;
+}
+    
+    .adress{
+    position: absolute;
+    left: 6%;;
+    
+}
+   .titleName a{
+      text-decoration: none;
+      color:rgb(17, 41, 80);
+   }
+    .adress p{
+    width:240px;
+    font-size: 20px;
+    color: #797a7d;
+    font-family: 'Lora' , sans-serif;
+    line-height: 30px;
+    height: 70px;
+    margin: 0;
+    
+}
+   
+    .contact span{
+    border-bottom: 1px dotted #797a7d;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #797a7d;
+}
+   
+    .contact{
+    position: absolute;
+    right: 6%;
+
+}
+   .contact i{
+    background-color: #ff4345;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/* For facebook icon*/
+   #pad{
+    padding-left: 14px ;
+    padding-right: 14px;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media (min-width: 607px) and (max-width: 991.99px)
+{
+    .logoPart{
+    text-align: center;
+    height: 220px;
+    border-bottom: 1px solid #ccc;
+}
+   .adress{
+    margin-bottom: 10px;
+    
+}
+   .adress p{
+    font-size: 20px;
+    color: #797a7d;
+    font-family: 'Lora' , sans-serif;
+    line-height: 30px;
+    height: 70px;
+    margin: 0;
+    
+    
+}
+   .titleName{
+   margin-bottom: 10px;
+}
+   .contact span{
+    border-bottom: 1px dotted #797a7d;
+    font-size: 20px;
+    cursor: pointer;
+    color: #797a7d;
+    
+}
+   .contact{
+    margin-bottom: 10px;
+    
+}
+   .contact i{
+    margin-top: 10px; 
+    background-color: #ff4345;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/* For facebook icon*/
+   #pad{
+    padding-left: 9px ;
+    padding-right: 9px;
+}
+
+.titleName a{
+      text-decoration: none;
+      color:rgb(17, 41, 80);
+   }
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 606.99px){
+    body{
+        color: #324b72;
+        width: 100%;
+        box-shadow: 2px 0px 5px #ccc,  -2px 0px 5px #ccc ;
+        position: relative;
+        left:0%;
+        padding-top: 40px;
+    }
+    .logoPart{
+        text-align: center;
+        height: 220px;
+        border-bottom: 1px solid #ccc;
+    }
+       .adress{
+        margin-bottom: 10px;
+        
+    }
+       .adress p{
+        font-size: 20px;
+        color: #797a7d;
+        font-family: 'Lora' , sans-serif;
+        line-height: 30px;
+        height: 70px;
+        margin: 0;
+        
+        
+    }
+       .titleName{
+       margin-bottom: 10px;
+    }
+       .contact span{
+        border-bottom: 1px dotted #797a7d;
+        font-size: 20px;
+        cursor: pointer;
+        color:#797a7d;
+    }
+       .contact{
+        margin-bottom: 10px;
+        
+    }
+       .contact i{
+        margin-top: 10px; 
+        background-color: #ff4345;
+        color: #fff;
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 50%;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    /* For facebook icon*/
+       #pad{
+        padding-left: 9px ;
+        padding-right: 9px;
+    }
+    
+    .titleName a{
+          text-decoration: none;
+          color:rgb(17, 41, 80);
+       }
+       
+    .navbarList li a:hover{
+        color:#ff4345;
+        
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .form-control{
+        width:100%;
+        position: intial;
+        left: 0px;
+        border-radius: 0px;;
+    }
+}

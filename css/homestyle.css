@@ -1,0 +1,618 @@
+/*************************
+ Project name : Analysis
+ Doctor : Amr Abo Hani
+ Working team : Mariam Mohamed Ibrahim
+                Rawan Ahmed Mohamed
+                Zainab Mohamed Abd-Elfatah
+                Salsabil Mohamed Taha
+ ***************************/
+/* First Section */
+/* Logo part */
+* {
+    box-sizing: border-box;
+}
+body{
+    color: #324b72;
+    width: 90%;
+    box-shadow: 2px 0px 5px #ccc,  -2px 0px 5px #ccc ;
+    position: relative;
+    left:5%;
+    padding-top: 40px;
+}
+
+/*Navbar part*/
+.navbarList li a{
+    font-weight: bold;
+    font-size: 15px;
+    color: #324b72;
+    line-height: 35px;
+}
+.navbarList li a:focus{
+    color:#ff4345;
+    border-bottom: 2px solid #ff4345;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.navbarList li a:hover{
+    color:#ff4345;
+    border-bottom: 2px solid #ff4345;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+/* carousel Part*/
+.carouselPart{
+   position: relative;
+}
+.carouselCaption{
+    background-color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    color:rgb(17, 41, 80);
+    width: 490px;
+    text-align: left;
+    padding: 40px;
+    top: 205px;
+    left:5%;
+    bottom: auto;
+    border-left: 5px solid #ff4345;
+}
+.carouselCaption h1{
+   font-size: 58px;
+}
+.carouselCaption p{
+   font-size: 22px;
+   font-weight: lighter;
+}
+.carouselCaption a{
+   color:#ff4345;
+   text-decoration: none;
+   font-size: 18px;
+}
+.carouselCaption a:hover{
+   color: #b0b0b0;
+}
+.menuStyle{
+   color: rgb(17, 41, 80);
+   
+}
+/* about section*/
+.aboutSection{
+    padding-top: 5%;
+}
+.headline{
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(17, 41, 80);
+    font-family: 'Lora', sans-serif;
+}
+.fixedImg{
+    width:450px;
+    height: 302.4px;
+    background-image: url("../img/88.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+.about{
+    border-left: 5px solid #ff4345;
+    height: 302.4px;
+    font-family: 'Lora',sans-serif;
+}
+.about h2{
+    color:rgb(17, 41, 80);
+    
+    padding: 5%;
+}
+.about p{
+    margin-left: 5%;
+}
+.about a{
+    color:#ff4345;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 5%;
+}
+.about a:hover{
+    color: #b0b0b0;
+ }
+/* Analysis section*/
+.analysisSection{
+    background-color: #f0f0f0;
+    
+}
+.analysishead{
+    padding-top: 30px;
+}
+.analysisImg{
+    width: 450px;
+}
+
+.analysisImg img:hover{
+    box-shadow: 2px 2px 3px #ccc,-2px -2px 3px #ccc;
+}
+.shadowImgBMI img:hover{
+    box-shadow:2px 2px 3px #8f8f8f,-2px -2px 3px  #8f8f8f;
+}
+.bmiSection{
+    background-color: #fff;
+}
+.content{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.offer{
+    margin-bottom:0;
+}
+/*footer section*/
+footer{
+    background-color:#f0f0f0 ;
+    color: rgb(17, 41, 80);
+    text-align: center;
+    padding: 40px;
+}
+footer div .fa{
+    padding: 15px;
+    font-size: 24px;
+    color: rgb(17, 41, 80);
+}
+footer .fa:hover{
+    color: #ff4345;
+}
+footer .fa:focus{
+    color: #ff4345;
+}
+ 
+
+/* Modal part*/
+.modal-content{
+    padding: 15px;
+    border-radius: 0;
+    box-shadow: 2px 2px 5px #b0b0b0, -2px -2px 5px #b0b0b0;
+}
+.modal-title span{
+    color: rgb(17, 41, 80);
+}
+.modal-title a{
+    text-decoration: none;
+}
+.modal-header{
+    border-bottom: none;
+}
+.modal-body input{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+}
+.modal-body h3{
+    margin-bottom: 20px;
+}
+.modal-body button{
+    width: 100%;
+    background-color: rgb(17, 41, 80);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.modal-body button:hover{
+    color:#fff;
+}
+.modal-body .rightlink{
+    position: absolute;
+    right: 18px;
+}
+.modal-body div{
+    padding: 25px 0 25px 5px;
+}
+.modal-body div a{
+    color: rgb(17, 41, 80);
+    text-decoration: none;
+}
+.modal-body div a:hover{
+    color: #ff4345;
+}
+/* fot login page */
+.content-login{
+    width: 530px;
+    margin: 55px auto 55px auto;
+}
+.navbar{
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+/*resposive First section*/
+@media (min-width: 1200px)
+{
+    .aboutimg{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 992px)
+{
+    .logoPart{
+    display: flex;
+    flex-wrap: wrap;
+    height: 95px;
+    border-bottom: 1px solid #ccc;
+}
+    .titleName{
+    position: absolute;
+    left:43%;
+    }
+    .adress{
+    position: absolute;
+    left: 6%;
+    
+}
+   .titleName a{
+      text-decoration: none;
+      color:rgb(17, 41, 80);
+   }
+    .adress p{
+    width:240px;
+    font-size: 20px;
+    color: #797a7d;
+    font-family: 'Lora' , sans-serif;
+    line-height: 30px;
+    height: 70px;
+    margin: 0;
+    
+}
+   
+    .contact span{
+    border-bottom: 1px dotted #324b72;
+    font-size: 20px;
+    margin-right: 20px;
+}
+    .contact{
+    position: absolute;
+    right: 6%;
+
+}
+   .contact i{
+    background-color: #ff4345;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/* For facebook icon*/
+   #pad{
+    padding-left: 14px ;
+    padding-right: 14px;
+}
+/* about section*/
+.aboutimg .about{
+    width:35%;
+}
+.analysisText{
+    width: 35%;
+    border-left: 5px solid #ff4345;
+
+    font-family: 'Lora',sans-serif;
+    
+}
+.analysisText h2{
+    color:rgb(17, 41, 80);
+    padding: 5%;
+    font-size: 1.5rem;
+}
+.analysisText p{
+    padding: 0 0 0 5%;
+    line-height: 30px;
+}
+.analysisText a{
+    color:#ff4345;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 5%;
+}
+.analysisText a:hover{
+    color: #b0b0b0;
+ }
+ .bmiSection{
+    background-color: #fff;
+}
+.bmiContent{
+   padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+}
+/* Tablet size *****************************/
+@media (min-width: 607px) and (max-width: 991.99px)
+{
+    .logoPart{
+    text-align: center;
+    height: 220px;
+    border-bottom: 1px solid #ccc;
+}
+   .adress{
+    margin-bottom: 10px;
+    
+}
+   .adress p{
+    font-size: 20px;
+    color: #797a7d;
+    font-family: 'Lora' , sans-serif;
+    line-height: 30px;
+    height: 70px;
+    margin: 0;
+    
+    
+}
+   .titleName{
+   margin-bottom: 10px;
+}
+   .contact span{
+    border-bottom: 1px dotted #324b72;
+    font-size: 20px;
+    
+}
+   .contact{
+    margin-bottom: 10px;
+    
+}
+   .contact i{
+    margin-top: 10px; 
+    background-color: #ff4345;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/* For facebook icon*/
+   #pad{
+    padding-left: 9px ;
+    padding-right: 9px;
+}
+
+.titleName a{
+      text-decoration: none;
+      color:rgb(17, 41, 80);
+   }
+/*about section*/
+.aboutimg{
+    justify-content: center;
+}
+/*analysis section*/
+.analysisSection{
+    background-color: #f0f0f0;
+}
+.analysishead{
+    padding-top: 30px;
+}
+.analysisText{
+    border-left: 5px solid #ff4345;
+    height: 277.65px;
+    font-family: 'Lora',sans-serif;
+    margin-bottom: 50px;
+}
+.analysisText h2{
+    color:rgb(17, 41, 80);
+    padding: 5%;
+
+}
+.analysisText p{
+    padding: 0 0 0 5%;
+    line-height: 30px;
+    width: 432.58px;
+
+}
+.analysisText a{
+    color:#ff4345;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 5%;
+}
+.analysisText a:hover{
+    color: #b0b0b0;
+ }
+
+ .bmiSection{
+    background-color: #fff;
+}
+.shadowImgBMI{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+}
+/****** Mobile Part ********/
+@media (max-width: 606.99px){
+body{
+    color: #324b72;
+    width: 100%;
+    box-shadow: 2px 0px 5px #ccc,  -2px 0px 5px #ccc ;
+    position: relative;
+    left:0%;
+    padding-top: 40px;
+}
+.logoPart{
+    text-align: center;
+    height: 220px;
+    border-bottom: 1px solid #ccc;
+}
+   .adress{
+    margin-bottom: 10px;
+    
+}
+   .adress p{
+    font-size: 20px;
+    color: #797a7d;
+    font-family: 'Lora' , sans-serif;
+    line-height: 30px;
+    height: 70px;
+    margin: 0;
+    
+    
+}
+   .titleName{
+   margin-bottom: 10px;
+}
+   .contact span{
+    border-bottom: 1px dotted #324b72;
+    font-size: 20px;
+    
+}
+   .contact{
+    margin-bottom: 10px;
+    
+}
+   .contact i{
+    margin-top: 10px; 
+    background-color: #ff4345;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/* For facebook icon*/
+   #pad{
+    padding-left: 9px ;
+    padding-right: 9px;
+}
+
+.titleName a{
+      text-decoration: none;
+      color:rgb(17, 41, 80);
+   }
+   
+.navbarList li a:hover{
+    color:#ff4345;
+    
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+/**********/
+.carouselCaption{
+    background-color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    color:rgb(17, 41, 80);
+    width: 255px;
+    text-align: left;
+    padding: 40px;
+    top: 205px;
+    left:5%;
+    bottom: auto;
+    border-left: 5px solid #ff4345;
+}
+.carouselCaption h1{
+   font-size: 34px;
+} 
+.about{
+    width: 100%;
+} 
+/*analysis section*/
+.analysisSection{
+    background-color: #f0f0f0;
+}
+.analysishead{
+    padding-top: 30px;
+}
+.analysisText{
+    border-left: 5px solid #ff4345;
+    
+    font-family: 'Lora',sans-serif;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.analysisText h2{
+    color:rgb(17, 41, 80);
+    padding: 5%;
+
+}
+.analysisText p{
+    padding: 0 0 0 5%;
+    line-height: 30px;
+
+
+}
+.analysisText a{
+    color:#ff4345;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 5%;
+}
+.analysisText a:hover{
+    color: #b0b0b0;
+ }
+
+ .bmiSection{
+    background-color: #fff;
+}
+.shadowImgBMI{
+    margin-bottom: 50px;
+}
+   
+   /* resposive down*/
+.content-login{
+    width: 100%;
+}  
+.rightlink{
+    left: 21px;
+    bottom: 20px;
+}
+.modal-body div {
+    padding: 25px 0 0px 5px;
+    height: 80px;
+}
+   
+   
+   
+   
+   
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                

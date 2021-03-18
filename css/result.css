@@ -1,0 +1,473 @@
+/*************************
+ Project name : Analysis
+ Doctor : Amr Abo Hani
+ Working team : Mariam Mohamed Ibrahim
+                Rawan Ahmed Mohamed
+                Zainab Mohamed Abd-Elfatah
+                Salsabil Mohamed Taha
+ ***************************/
+/* RESULT */
+
+
+/* First Section */
+/* Logo part */
+*{
+    box-sizing: border-box;
+}
+body{
+    color: #324b72;
+    width: 90%;
+    box-shadow: 2px 0px 5px #ccc,  -2px 0px 5px #ccc ;
+    position: relative;
+    left:5%;
+    padding-top: 40px;
+}
+
+/*Navbar part*/
+.navbar{
+    border-bottom:none;
+}
+.navbarList li a{
+    font-weight: bold;
+    font-size: 15px;
+    color: #324b72;
+    line-height: 35px;
+}
+.navbarList li a:focus{
+    color:#ff4345;
+    border-bottom: 2px solid #ff4345;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.navbarList li a:hover{
+    color:#ff4345;
+    border-bottom: 2px solid #ff4345;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+/* carousel Part*/
+.carouselPart{
+   position: relative;
+}
+.carouselCaption{
+    background-color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    color:rgb(17, 41, 80);
+    width: 490px;
+    text-align: left;
+    padding: 40px;
+    top: 205px;
+    left:5%;
+    bottom: auto;
+    border-left: 5px solid #ff4345;
+}
+.carouselCaption h1{
+   font-size: 58px;
+}
+.carouselCaption p{
+   font-size: 22px;
+   font-weight: lighter;
+}
+.carouselCaption a{
+   color:#ff4345;
+   text-decoration: none;
+   font-size: 18px;
+}
+.carouselCaption a:hover{
+   color: #b0b0b0;
+}
+.menuStyle{
+   color: rgb(17, 41, 80);
+   
+}
+.aboutSection{
+    
+    
+    
+    padding: 5%;
+    height: 1000px;;
+}
+.headline{
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(17, 41, 80);
+    font-family: 'Lora', sans-serif;
+}
+.fixedImg{
+    width:450px;
+    height: 302.4px;
+    background-image: url("img/88.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 10px/30px;
+    margin-bottom: 50px;
+}
+.about{
+    border-left: 5px solid #ff4345;
+    height: 302.4px;
+    font-family: 'Lora',sans-serif;
+}
+.about h2{
+    color:rgb(17, 41, 80);
+    
+    padding: 5%;
+}
+.about p{
+    margin-left: 5%;
+}
+.about a{
+    color:#ff4345;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 5%;
+}
+.about a:hover{
+    color: #b0b0b0;
+ }
+
+/*footer section*/
+footer{
+    background-color:#f0f0f0 ;
+    color: rgb(17, 41, 80);
+    text-align: center;
+    padding: 40px;
+}
+footer div .fa{
+    padding: 15px;
+    font-size: 24px;
+    color: rgb(17, 41, 80);
+}
+footer .fa:hover{
+    color: #ff4345;
+}
+footer .fa:focus{
+    color: #ff4345;
+}
+
+
+/*resposive First section*/
+@media (min-width: 1200px)
+{
+    .aboutimg{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 992px)
+{
+    .logoPart{
+    display: flex;
+    flex-wrap: wrap;
+    height: 95px;
+    border-bottom: 1px solid #ccc;
+}
+    .titleName{
+    position: absolute;
+    left:43%;
+    }
+    .adress{
+    position: absolute;
+    left: 6%;
+    
+}
+   .titleName a{
+      text-decoration: none;
+      color:rgb(17, 41, 80);
+   }
+    .adress p{
+    width:240px;
+    font-size: 20px;
+    color: #797a7d;
+    font-family: 'Lora' , sans-serif;
+    line-height: 30px;
+    height: 70px;
+    margin: 0;
+    
+}
+   
+    .contact span{
+    border-bottom: 1px dotted #324b72;
+    font-size: 20px;
+    margin-right: 20px;
+}
+    .contact{
+    position: absolute;
+    right: 6%;
+
+}
+   .contact i{
+    background-color: #ff4345;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/* For facebook icon*/
+   #pad{
+    padding-left: 14px ;
+    padding-right: 14px;
+}
+.aboutimg .about{
+    width:35%;
+}
+/*the result*/
+/*table*/
+.the_result
+{
+   border-collapse: separate ;
+   width: 100% ;
+   padding:  5px;
+   margin-top: 10px;
+}
+.first
+{
+   background-color: #fbf9f9
+}
+.tall
+{
+   /*border: 3px solid #ff4345 ;*/
+   border-left: 2px solid #ff4345;
+   text-align: left;
+   padding: 10px;
+   border-radius: 10px ;
+   font-size: 25px;
+   color:#112950;
+}
+.Name , .Result
+{
+   font-size: 25px ;
+   font-weight: 600 ;
+}
+.followInstruction
+{
+   border: 2px solid #ececec ;
+   text-align: center ;
+   font-size: 30px;
+   margin: 10px ;
+}
+.headDiv
+{
+   font-size: 30px;
+   justify-content: center ;
+   background-color: #fbf9f9;
+}
+
+}
+/* Tablet size *****************************/
+@media (min-width: 607px) and (max-width: 991.99px)
+{
+    .logoPart{
+    text-align: center;
+    height: 220px;
+    border-bottom: 1px solid #ccc;
+}
+   .adress{
+    margin-bottom: 10px;
+    
+}
+   .adress p{
+    font-size: 20px;
+    color: #797a7d;
+    font-family: 'Lora' , sans-serif;
+    line-height: 30px;
+    height: 70px;
+    margin: 0;
+    
+    
+}
+   .titleName{
+   margin-bottom: 10px;
+}
+   .contact span{
+    border-bottom: 1px dotted #324b72;
+    font-size: 20px;
+    
+}
+   .contact{
+    margin-bottom: 10px;
+    
+}
+   .contact i{
+    margin-top: 10px; 
+    background-color: #ff4345;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/* For facebook icon*/
+   #pad{
+    padding-left: 9px ;
+    padding-right: 9px;
+}
+
+.titleName a{
+      text-decoration: none;
+      color:rgb(17, 41, 80);
+   }
+
+.aboutimg{
+    justify-content: center;
+}
+
+/*the result*/
+/*table*/
+.the_result
+{
+   border-collapse: separate ;
+   width: 100% ;
+   padding:  5px;
+   margin-top: 5px;
+}
+.first
+{
+   background-color: #fbf9f9
+}
+.tall
+{
+   /*border: 2px solid #ff4345 ;*/
+   border-left: 2px solid #ff4345;
+   text-align: left;
+   padding: 5px;
+   border-radius: 5px ;
+   font-size: 20px;
+   color:#112950;
+
+}
+.Name , .Result
+{
+   font-size: 20px ;
+   font-weight: 500 ;
+}
+.followInstruction
+{
+   border: 1px solid #ececec ;
+   text-align: center ;
+   font-size: 25px;
+   margin: 5px ;
+}
+.headDiv
+{
+   font-size: 25px;
+   justify-content: center ;
+   background-color: #fbf9f9;
+}
+
+}
+/****** Mobile Part ********/
+@media (max-width: 606.99px){
+body{
+    color: #324b72;
+    width: 100%;
+    box-shadow: 2px 0px 5px #ccc,  -2px 0px 5px #ccc ;
+    position: relative;
+    left:0%;
+    padding-top: 40px;
+}
+.logoPart{
+    text-align: center;
+    height: 220px;
+    border-bottom: 1px solid #ccc;
+}
+   .adress{
+    margin-bottom: 10px;
+    
+}
+   .adress p{
+    font-size: 20px;
+    color: #797a7d;
+    font-family: 'Lora' , sans-serif;
+    line-height: 30px;
+    height: 70px;
+    margin: 0;
+    
+    
+}
+   .titleName{
+   margin-bottom: 10px;
+}
+   .contact span{
+    border-bottom: 1px dotted #324b72;
+    font-size: 20px;
+    
+}
+   .contact{
+    margin-bottom: 10px;
+    
+}
+   .contact i{
+    margin-top: 10px; 
+    background-color: #ff4345;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/* For facebook icon*/
+   #pad{
+    padding-left: 9px ;
+    padding-right: 9px;
+}
+
+.titleName a{
+      text-decoration: none;
+      color:rgb(17, 41, 80);
+   }
+   
+.navbarList li a:hover{
+    color:#ff4345;
+    
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+/*the result*/
+/*table*/
+.the_result
+{
+   border-collapse: separate ;
+   width: 100% ;
+   padding: 3px;
+   margin-top: 2px;
+}
+.first
+{
+   background-color: #fbf9f9;
+}
+.tall
+{
+   /*border: 2px solid #ff4345 ;*/
+   border-left: 2px solid #ff4345;
+   text-align: left;
+   padding: 5px;
+   border-radius: 5px ;
+   font-size: 20px;
+   color:#112950;
+}
+.Name , .Result
+{
+   font-size: 20px ;
+   font-weight: 400 ;
+}
+.followInstruction
+{
+   border: 1px solid #ececec ;
+   text-align: center ;
+   font-size: 25px;
+   margin: 5px ;
+}
+.headDiv
+{
+   font-size: 25px;
+   justify-content: center ;
+   background-color: #fbf9f9;
+}
+
+}
+
+
+
+

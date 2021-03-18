@@ -1,0 +1,1036 @@
+/*************************
+ Project name : Analysis
+ Doctor : Amr Abo Hani
+ Working team : Mariam Mohamed Ibrahim
+                Rawan Ahmed Mohamed
+                Zainab Mohamed Abd-Elfatah
+                Salsabil Mohamed Taha
+ ***************************/
+/*BMI*/
+
+
+/* First Section */
+/* Logo part */
+* {
+    box-sizing: border-box;
+}
+body{
+    color: #324b72;
+    width: 90%;
+    box-shadow: 2px 0px 5px #ccc,  -2px 0px 5px #ccc ;
+    position: relative;
+    left:5%;
+    padding-top: 40px;
+}
+
+/*Navbar part*/
+.navbarList li a{
+    font-weight: bold;
+    font-size: 15px;
+    color: #324b72;
+    line-height: 35px;
+}
+.navbarList li a:focus{
+    color:#ff4345;
+    border-bottom: 2px solid #ff4345;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.navbarList li a:hover{
+    color:#ff4345;
+    border-bottom: 2px solid #ff4345;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+/* carousel Part*/
+.carouselPart{
+   position: relative;
+}
+.carouselCaption{
+    background-color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    color:rgb(17, 41, 80);
+    width: 490px;
+    text-align: left;
+    padding: 40px;
+    top: 205px;
+    left:5%;
+    bottom: auto;
+    border-left: 5px solid #ff4345;
+}
+.carouselCaption h1{
+   font-size: 58px;
+}
+.carouselCaption p{
+   font-size: 22px;
+   font-weight: lighter;
+}
+.carouselCaption a{
+   color:#ff4345;
+   text-decoration: none;
+   font-size: 18px;
+}
+.carouselCaption a:hover{
+   color: #b0b0b0;
+}
+.menuStyle{
+   color: rgb(17, 41, 80);
+   
+}
+.aboutSection{
+    
+    
+    
+    padding: 5%;
+    height: 1000px;;
+}
+.headline{
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(17, 41, 80);
+    font-family: 'Lora', sans-serif;
+}
+.fixedImg{
+    width:450px;
+    height: 302.4px;
+    background-image: url("img/88.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 10px/30px;
+    margin-bottom: 50px;
+}
+.about{
+    border-left: 5px solid #ff4345;
+    height: 302.4px;
+    font-family: 'Lora',sans-serif;
+}
+.about h2{
+    color:rgb(17, 41, 80);
+    
+    padding: 5%;
+}
+.about p{
+    margin-left: 5%;
+}
+.about a{
+    color:#ff4345;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 5%;
+}
+.about a:hover{
+    color: #b0b0b0;
+ }
+
+/*footer section*/
+footer{
+    background-color:#f0f0f0 ;
+    color: rgb(17, 41, 80);
+    text-align: center;
+    padding: 40px;
+}
+footer div .fa{
+    padding: 15px;
+    font-size: 24px;
+    color: rgb(17, 41, 80);
+}
+footer .fa:hover{
+    color: #ff4345;
+}
+footer .fa:focus{
+    color: #ff4345;
+}
+
+
+/*resposive First section*/
+@media (min-width: 1200px)
+{
+    .aboutimg{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 992px)
+{
+    .logoPart{
+    display: flex;
+    flex-wrap: wrap;
+    height: 95px;
+    border-bottom: 1px solid #ccc;
+}
+    .titleName{
+    position: absolute;
+    left:43%;
+    }
+    .adress{
+    position: absolute;
+    left: 6%;
+    
+}
+   .titleName a{
+      text-decoration: none;
+      color:rgb(17, 41, 80);
+   }
+    .adress p{
+    width:240px;
+    font-size: 20px;
+    color: #797a7d;
+    font-family: 'Lora' , sans-serif;
+    line-height: 30px;
+    height: 70px;
+    margin: 0;
+    
+}
+   
+    .contact span{
+    border-bottom: 1px dotted #324b72;
+    font-size: 20px;
+    margin-right: 20px;
+}
+    .contact{
+    position: absolute;
+    right: 6%;
+
+}
+   .contact i{
+    background-color: #ff4345;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/* BMI CSS */
+.info-bmi
+{
+   display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+.what-is-Bmi
+{
+   font-size: 20px ;
+   border-left: 5px solid #ff4345;
+   width: 400px  ;
+   padding: 10px ;
+   background: #fcf5f5 ;
+   margin-left: 30px ;
+   justify-content: space-around;
+   margin: 15px ;
+}
+.imBmi
+{
+   height: 350px ;
+   width: 400px ;
+   margin-left: 10px ;
+}
+
+.bmi-calc
+{
+   display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+
+.form-bmi
+{
+   border-left: 5px solid #ff4345;
+   width: 70% ;
+   padding: 10px ;
+   background: #fcf5f5 ;
+   margin: 15px ;
+   position: relative ;
+   
+}
+.enter{
+   width: 200px ;
+   color: #112950 ;
+   font-size: 25px ;
+   line-height: 30px ;
+}
+
+.input
+{
+   width: 150px ;
+   background-color: #fbf9f9 ;
+   border-radius: 5px ;
+   color: #112950 ;
+   
+}
+.submit1
+{
+   background-color: #fbf9f9 ;
+   font-size: 30px ;
+   transition: all .0001s ease-in-out ;
+   float: right ;
+   position: absolute ;
+   top : 30% ;
+   left: 68% ;
+   color: #ff4345;
+   border-radius: 5px;
+   border: none;
+   box-shadow: 2px 2px #ccc;
+}
+button:focus 
+{
+   box-shadow: -2px -2px #ccc inset, 2px 2px #ccc inset;
+    outline: none;
+}
+input:focus
+{
+   outline: none ;
+}
+.submit1:active
+{
+   font-size: 30px ;
+   border-radius: 5px ;
+   color: #ff4345;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px #ccc;
+}
+.submit1:hover
+{
+  box-shadow: 2px 2px #ccc inset;
+}
+.your-Bmi{
+   font-size: 20px;
+   display: inline ;
+}
+.the-result{
+   display: inline ;
+   font-size: 20px;
+}
+.result-bmi{
+   padding: 15px ;
+   margin: 60px;
+   line-height: 80px ;
+   border: dotted 3px #ff4345 ;
+   border-radius: 40px 40px 40px 40px ;
+}
+
+.values
+{
+   border-collapse: collapse;
+   padding: 10px ;
+   margin: 15px ;
+   width: 70% ;
+}
+.values td , .values th
+{
+   border: 1px solid #ddd;
+   padding: 8px ;
+}
+.values tr:nth-child(odd)
+{
+   background-color: #f2f2f2;
+}
+
+.values tr:hover
+{
+   background-color: #ddd;
+}
+
+.values th
+{
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: left;
+   background-color: #112950;
+   color: white;
+}
+/*براجرافات*/
+.Explain-bmi
+{
+   display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+.Explain , .child{
+   width:85% ;
+}
+.up-explain
+{
+   font-size:27px;
+   font-weight: 900 ;
+   margin:  0px 0px 20px -30px;
+}
+.header-explain{
+   font-size: 24px ;
+   font-weight: 600 ;
+}
+.pragraph-explain
+{
+  font-size: 18px ;
+  padding: 5px 75px 5px 30px;
+  text-align: justify ;
+}
+.child-limi
+{
+  display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+} 
+/* Finish BMI css */
+/* For facebook icon*/
+   #pad{
+    padding-left: 14px ;
+    padding-right: 14px;
+}
+.aboutimg .about{
+    width:35%;
+}
+
+
+}
+/* Tablet size *****************************/
+@media (min-width: 607px) and (max-width: 991.99px)
+{
+    .logoPart{
+    text-align: center;
+    height: 220px;
+    border-bottom: 1px solid #ccc;
+}
+   .adress{
+    margin-bottom: 10px;
+    
+}
+   .adress p{
+    font-size: 20px;
+    color: #797a7d;
+    font-family: 'Lora' , sans-serif;
+    line-height: 30px;
+    height: 70px;
+    margin: 0;
+    
+    
+}
+   .titleName{
+   margin-bottom: 10px;
+}
+   .contact span{
+    border-bottom: 1px dotted #324b72;
+    font-size: 20px;
+    
+}
+   .contact{
+    margin-bottom: 10px;
+    
+}
+   .contact i{
+    margin-top: 10px; 
+    background-color: #ff4345;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* BMI CSS */
+.info-bmi
+{
+   display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+.what-is-Bmi
+{
+   font-size: 17px ;                              /*-------------------------------------------------------*/
+   border-left: 5px solid #ff4345;
+   width: 350px  ;                               /*-------------------------------------------------------*/
+   padding: 8px ;                               /*-------------------------------------------------------*/
+   background: #fcf5f5 ;
+   margin-left: 25px ;                               /*-------------------------------------------------------*/
+   justify-content: space-around;
+   margin: 12px ;                               /*-------------------------------------------------------*/
+}
+.imBmi
+{
+   height: 300px ;                               /*-------------------------------------------------------*/
+   width: 350px ;                               /*-------------------------------------------------------*/
+   margin-left: 10px ;
+}
+
+.bmi-calc
+{
+   display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+
+.form-bmi
+{
+   border-left: 5px solid #ff4345;
+   width: 70% ;
+   padding: 10px ;
+   background: #fcf5f5 ;
+   margin: 12px ;                               /*-------------------------------------------------------*/
+   position: relative ;   
+}
+.enter{
+   width: 200px ;
+   color: #112950 ;
+   font-size: 25px ;
+   line-height: 30px ;
+}
+
+.input
+{
+   width: 120px ;                               /*-------------------------------------------------------*/
+   background-color: #fbf9f9 ;
+   border-radius: 5px ;
+   color: #112950 ;
+   
+}
+.submit1
+{
+   background-color: #fbf9f9 ;
+   font-size: 20px ;                               /*-------------------------------------------------------*/
+   transition: all .0001s ease-in-out ;
+   position: absolute ;
+   top : 50% ;                               /*-------------------------------------------------------*/
+   left: 42% ;                               /*-------------------------------------------------------*/
+   color: #ff4345;
+   border-radius: 5px;
+   border: none;
+   box-shadow: 2px 2px #ccc;
+   padding:5px;                               /*-------------------------------------------------------*/
+}
+button:focus 
+{
+   box-shadow: -2px -2px #ccc inset;
+   outline: none ;
+}
+input:focus
+{
+   outline: none ;
+}
+.submit1:active
+{
+   font-size: 18px ;                               /*-------------------------------------------------------*/
+   border-radius: 5px ;
+   color: #ff4345 ;
+   border: none ;
+   box-shadow: 2px 2px #ccc ;
+}
+.submit1:hover                               /*-------------------------------------------------------*/
+{
+  box-shadow: 2px 2px #ccc ;
+}
+.result-bmi{
+   padding: 13px ;                               /*-------------------------------------------------------*/
+   margin: 50px;                               /*-------------------------------------------------------*/
+   line-height: 90px ;
+   border: dotted 3px #ff4345 ;
+   border-radius: 40px 40px 40px 40px ;
+}
+.your-Bmi{
+   font-size: 20px;
+   display: inline ;
+}
+.the-result{
+   display: inline ;
+   font-size: 20px;
+}
+
+/*table*/
+.values
+{
+   border-collapse: collapse;
+   padding: 10px ;
+   margin: 15px ;
+   width: 70% ;
+}
+.values td , .values th
+{
+   border: 1px solid #ddd;
+   padding: 8px ;
+}
+.values tr:nth-child(odd)
+{
+   background-color: #f2f2f2;
+}
+
+.values tr:hover
+{
+   background-color: #ddd;
+}
+
+.values th
+{
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: left;
+   background-color: #112950;
+   color: white;
+}
+/*براجرافات*/
+.Explain-bmi
+{
+   display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+.Explain , .child{
+   width:85% ;                                /*-------------------------------------------------------*/
+}
+.up-explain
+{
+   font-size:25px;                               /*-------------------------------------------------------*/
+   font-weight: 800 ;                               /*-------------------------------------------------------*/
+   margin:  0px 0px 20px -25px;                               /*-------------------------------------------------------*/
+}
+.header-explain{
+   font-size: 20px ;                               /*-------------------------------------------------------*/
+   font-weight: 700 ;                               /*-------------------------------------------------------*/
+}
+.pragraph-explain
+{
+  font-size: 17px ;                               /*-------------------------------------------------------*/
+  padding: 5px 75px 5px 30px;
+  text-align: justify ;
+}
+.child-limi
+{
+  display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+/* end table*/
+/* Finish BMI css */
+
+/* For facebook icon*/
+   #pad{
+    padding-left: 9px ;
+    padding-right: 9px;
+}
+
+.titleName a{
+      text-decoration: none;
+      color:rgb(17, 41, 80);
+   }
+
+.aboutimg{
+    justify-content: center;
+}
+
+}
+/****** Mobile Part ********/
+@media (max-width: 606.99px){
+body{
+    color: #324b72;
+    width: 100%;
+    box-shadow: 2px 0px 5px #ccc,  -2px 0px 5px #ccc ;
+    position: relative;
+    left:0%;
+    padding-top: 40px;
+}
+.logoPart{
+    text-align: center;
+    height: 220px;
+    border-bottom: 1px solid #ccc;
+}
+   .adress{
+    margin-bottom: 10px;
+    
+}
+   .adress p{
+    font-size: 20px;
+    color: #797a7d;
+    font-family: 'Lora' , sans-serif;
+    line-height: 30px;
+    height: 70px;
+    margin: 0;
+    
+    
+}
+   .titleName{
+   margin-bottom: 10px;
+}
+   .contact span{
+    border-bottom: 1px dotted #324b72;
+    font-size: 20px;
+    
+}
+   .contact{
+    margin-bottom: 10px;
+    
+}
+   .contact i{
+    margin-top: 10px; 
+    background-color: #ff4345;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* BMI CSS */
+
+.info-bmi
+{
+   display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+.what-is-Bmi
+{
+   font-size: 15px ;                               /*-------------------------------------------------------*/
+   border-left: 5px solid #ff4345;
+   width: 300px  ;                               /*-------------------------------------------------------*/
+   padding: 10px ;
+   background: #fcf5f5 ;
+   margin-left: 20px ;
+   justify-content: space-around;
+   margin: 10px ;
+}
+.imBmi
+{
+   height: 280px ;                               /*-------------------------------------------------------*/
+   width: 320px ;                               /*-------------------------------------------------------*/
+   margin-left: 7px ;                               /*-------------------------------------------------------*/
+}
+@media (max-width: 334px)
+{
+   .imBmi
+{
+   width: 100% ;                               /*-------------------------------------------------------*/
+   margin-left: 7px ;                               /*-------------------------------------------------------*/
+}
+}
+.bmi-calc
+{
+   display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+
+.form-bmi
+{
+   border-left: 5px solid #ff4345;
+   width: 80% ;                               /*-------------------------------------------------------*/
+   padding: 8px ;                               /*-------------------------------------------------------*/
+   background: #fcf5f5 ;
+   margin: 10px ;                               /*-------------------------------------------------------*/
+   position: relative;
+}
+.enter{
+   width: 200px ;                               /*-------------------------------------------------------*/
+   color: #112950 ;
+   font-size: 20px ;                               /*-------------------------------------------------------*/
+   line-height: 30px ;
+}
+
+.input
+{
+   width: 100px ;                               /*-------------------------------------------------------*/
+   background-color: #fbf9f9 ;
+   border-radius: 5px ;
+   color: #112950 ;
+   
+}
+.submit1
+{
+   background-color: #fbf9f9 ;
+   font-size: 17px ;                               /*-------------------------------------------------------*/
+   transition: all .0001s ease-in-out ;
+   position: absolute ;
+   left: 40% ;
+   bottom: 34%;
+   color: #ff4345;
+   border-radius: 5px;
+   border: none;
+   box-shadow: 2px 2px #ccc;
+   padding:5px;   
+}
+@media (max-width: 406px){
+.submit1
+{
+   background-color: #fbf9f9 ;
+   font-size: 17px ;                               /*-------------------------------------------------------*/
+   transition: all .0001s ease-in-out ;
+   position: absolute ;
+   left: 3%;
+   bottom: 24%;
+   color: #ff4345;
+   border-radius: 5px;
+   border: none;
+   box-shadow: 2px 2px #ccc;
+   padding:5px;   
+}
+}
+button:focus 
+{
+   box-shadow: -2px -2px #ccc inset;
+   outline: none ;
+}
+input:focus
+{
+   outline: none ;
+}
+.submit1:active
+{
+   font-size: 15px ;                               /*-------------------------------------------------------*/
+   border-radius: 5px ;
+   color: #ff4345 ;
+   border: none ;
+   box-shadow: 2px 2px #ccc;
+}
+.your-Bmi{
+   font-size: 15px;                               /*-------------------------------------------------------*/
+   display: inline ;
+}
+.the-result{
+   display: inline ;
+   font-size: 15px;                               /*-------------------------------------------------------*/
+}
+.result-bmi{
+   padding: 10px ;                               /*-------------------------------------------------------*/
+   line-height: 80px ;
+   border: dotted 3px #ff4345 ;
+   border-radius: 40px 40px 40px 40px ;
+}
+/*table*/
+.values
+{
+   border-collapse: collapse;
+   padding: 10px ;
+   margin: 15px ;
+   width: 83% ;                               /*-------------------------------------------------------*/
+}
+.values td , .values th
+{
+   border: 1px solid #ddd;
+   padding: 8px ;
+}
+.values tr:nth-child(odd)
+{
+   background-color: #f2f2f2;
+}
+
+.values tr:hover
+{
+   background-color: #ddd;
+}
+
+.values th
+{
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: left;
+   background-color: #112950;
+   color: white;
+}
+/*براجرافات*/
+.Explain-bmi
+{
+   display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+.Explain , .child{
+   width:85% ;                                /*-------------------------------------------------------*/
+}
+.up-explain
+{
+   font-size:22px;                               /*-------------------------------------------------------*/
+   font-weight: 700 ;                               /*-------------------------------------------------------*/
+   margin:  0px 0px 20px -15px;                               /*-------------------------------------------------------*/
+}
+.header-explain{
+   font-size: 15px ;                               /*-------------------------------------------------------*/
+   font-weight: 600 ;                               /*-------------------------------------------------------*/
+}
+.pragraph-explain
+{
+  font-size: 13px ;                               /*-------------------------------------------------------*/
+  padding: 5px 75px 5px 30px;
+  text-align: justify ;
+}
+.child-limi
+{
+  display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+/*End Table*/
+/* Finish BMI css */
+
+/* For facebook icon*/
+   #pad{
+    padding-left: 9px ;
+    padding-right: 9px;
+}
+
+.titleName a{
+      text-decoration: none;
+      color:rgb(17, 41, 80);
+   }
+   
+.navbarList li a:hover{
+    color:#ff4345;
+    
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+}
+
+/* BMI CSS */
+/*
+.info-bmi
+{
+   display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+.what-is-Bmi
+{
+   font-size: 20px ;
+   border-left: 5px solid #ff4345;
+   width: 400px  ;
+   padding: 10px ;
+   background: #fcf5f5 ;
+   margin-left: 30px ;
+   justify-content: space-around;
+   margin: 15px ;
+}
+.imBmi
+{
+   height: 350px ;
+   width: 400px ;
+   border: 1px #000 solid ;
+   margin-left: 10px ;
+}
+
+.bmi-calc
+{
+   display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+
+.form-bmi
+{
+   border-left: 5px solid #ff4345;
+   width: 70% ;
+   padding: 10px ;
+   background: #fcf5f5 ;
+   margin: 15px ;
+   
+}
+.enter{
+   width: 200px ;
+   color: #112950 ;
+   font-size: 25px ;
+   line-height: 30px ;
+}
+
+.input
+{
+   width: 150px ;
+   background-color: #fbf9f9 ;
+   border-radius: 5px ;
+   color: #112950 ;
+   
+}
+.submit1
+{
+   background-color: #fbf9f9 ;
+   font-size: 30px ;
+   border-radius: 10px ;
+   color: #112950 ;
+   transition: all .0001s ease-in-out ;
+   float: right ;
+   margin: -40px 130px 0px 0px ;
+}
+button:focus 
+{
+   outline: none ;
+}
+input:focus
+{
+   outline: none ;
+}
+.submit1:active
+{
+   font-size: 27px ;
+   border-radius: 15px ;
+   color: #EEE ;
+   background-color: #112950 ;
+}
+.result-Bmi{
+   font-size: 20px;
+   display: inline ;
+}
+.the-result{
+   display: inline ;
+   font-size: 20px;
+}
+.center{
+   padding: 15px ;
+   margin: 60px;
+   line-height: 80px ;
+   border: dotted 3px #ff4345 ;
+   border-radius: 40px 40px 40px 40px ;
+}
+
+.values
+{
+   border-collapse: collapse;
+   padding: 10px ;
+   margin: 15px ;
+   width: 70% ;
+}
+.values td , .values th
+{
+   border: 1px solid #ddd;
+   padding: 8px ;
+}
+.values tr:nth-child(odd)
+{
+   background-color: #f2f2f2;
+}
+
+.values tr:hover
+{
+   background-color: #ddd;
+}
+
+.values th
+{
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: left;
+   background-color: #112950;
+   color: white;
+}
+/////////////////////براجرافات
+.Explain-bmi
+{
+   display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+.Explain , .child{
+   width:80% ; 
+}
+.up-explain
+{
+   margin:  0px 0px 20px -30px;
+}
+.pragraph-explain
+{
+  font-size: 20px ;
+  padding: 5px 75px 5px 30px;
+  text-align: justify ;
+}
+.child-limi
+{
+  display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+*/
+/* Finish BMI css */

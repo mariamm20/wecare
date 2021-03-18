@@ -1,0 +1,168 @@
+[
+    {
+        "id": "1",
+        "analysis": "Blood Glugcose",
+        "parent_id": "0"
+    },
+    {
+        "id": "2",
+        "analysis": "Liver enzymes",
+        "parent_id": "0"
+    },
+    {
+        "id": "3",
+        "analysis": "INR",
+        "parent_id": "0"
+    },
+    {
+        "id": "4",
+        "analysis": "CBC blood",
+        "parent_id": "0"
+    },
+    {
+        "id": "5",
+        "analysis": "Kidney analysis",
+        "parent_id": "0"
+    },
+    {
+        "id": "6",
+        "analysis": "H.pylori",
+        "parent_id": "0"
+    },
+    {
+        "id": "7",
+        "analysis": "Fasting Blood glucose",
+        "parent_id": "1"
+    },
+    {
+        "id": "8",
+        "analysis": "2hrs Postprandial Glucose",
+        "parent_id": "1"
+    },
+    {
+        "id": "9",
+        "analysis": "Glycosylated Hb (HbAIC)",
+        "parent_id": "1"
+    },
+    {
+        "id": "10",
+        "analysis": "Bilirubin (Total)",
+        "parent_id": "2"
+    },
+    {
+        "id": "11",
+        "analysis": "Bilirubin (Direct)",
+        "parent_id": "2"
+    },
+    {
+        "id": "12",
+        "analysis": "ALT",
+        "parent_id": "2"
+    },
+    {
+        "id": "13",
+        "analysis": "AST",
+        "parent_id": "2"
+    },
+    {
+        "id": "14",
+        "analysis": "PT",
+        "parent_id": "2"
+    },
+    {
+        "id": "15",
+        "analysis": "Albumin",
+        "parent_id": "2"
+    },
+    {
+        "id": "16",
+        "analysis": "GGT",
+        "parent_id": "2"
+    },
+    {
+        "id": "17",
+        "analysis": "Total Protein",
+        "parent_id": "2"
+    },
+    {
+        "id": "18",
+        "analysis": "Alkaline Phosphatase",
+        "parent_id": "2"
+    },
+    {
+        "id": "19",
+        "analysis": "Bleeding time (BT)",
+        "parent_id": "3"
+    },
+    {
+        "id": "20",
+        "analysis": "Clotting time (CT)",
+        "parent_id": "3"
+    },
+    {
+        "id": "21",
+        "analysis": "Prothrombin time (PT)",
+        "parent_id": "3"
+    },
+    {
+        "id": "22",
+        "analysis": "PTT",
+        "parent_id": "3"
+    },
+    {
+        "id": "23",
+        "analysis": "Platelets count",
+        "parent_id": "3"
+    },
+    {
+        "id": "24",
+        "analysis": "Fibrinogen level",
+        "parent_id": "3"
+    },
+    {
+        "id": "25",
+        "analysis": "Fibrinogen Degradation Products",
+        "parent_id": "3"
+    },
+    {
+        "id": "26",
+        "analysis": "R.B.C",
+        "parent_id": "4"
+    },
+    {
+        "id": "27",
+        "analysis": "W.B.C",
+        "parent_id": "4"
+    },
+    {
+        "id": "28",
+        "analysis": "MCHC",
+        "parent_id": "4"
+    },
+    {
+        "id": "29",
+        "analysis": "HCT",
+        "parent_id": "4"
+    },
+    {
+        "id": "30",
+        "analysis": "PLT",
+        "parent_id": "4"
+    },
+    {
+        "id": "31",
+        "analysis": "ACR",
+        "parent_id": "5"
+    },
+    {
+        "id": "32",
+        "analysis": "GFR",
+        "parent_id": "5"
+    },
+    {
+        "id": "33",
+        "analysis": "Pylori AG in stool",
+        "parent_id": "6"
+    }
+]
+
